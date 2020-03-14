@@ -1,0 +1,48 @@
+{
+    "name": "infinitypaul/naira-exchange-rates",
+    "description": "Foreign exchange rates API Against The Naira",
+    "keywords": [
+        "infinitypaul",
+        "naira-exchange-rates",
+        "exchange-rate",
+        "forex",
+        "naira",
+        "currency converter"
+    ],
+    "homepage": "https://github.com/infinitypaul/naira-exchange-rates",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paul Edward",
+            "email": "infinitypaul@live.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.5",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Infinitypaul\\NairaExchangeRates\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Infinitypaul\\NairaExchangeRates\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
