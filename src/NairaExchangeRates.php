@@ -29,16 +29,11 @@ class NairaExchangeRates
      */
     protected $response;
 
-
-
     /**
      * Instance of Guzzle Client.
      * @var object
      */
     protected $client;
-
-
-
 
     public function __construct($accessToken = null)
     {
@@ -53,20 +48,22 @@ class NairaExchangeRates
     {
         $this->client = new Client(['base_uri' => self::baseURL, 'headers' => [
             'Accept' => 'application/json',
-            'Authorization' => 'Bearer '.$this->accessToken
+            'Authorization' => 'Bearer '.$this->accessToken,
         ]]);
     }
 
     public function getResponse()
     {
-        $response  = new Response($this->response);
+        $response = new Response($this->response);
         $json = $response->toJSON();
-        return json_decode( $json );
+
+        return json_decode($json);
     }
 
     public function performGetRequest($relativeUrl, $params)
     {
         $this->response = $this->client->request('GET', $relativeUrl, $params);
+
         return $this->getResponse();
     }
 
