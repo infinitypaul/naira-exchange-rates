@@ -18,7 +18,7 @@ Alternatively, you can download all files from the src/ directory and include th
 
 ## Usage
 
-The Naira Currency Exchange API does  require API keys or authentication in order to access and interrogate its API, Register and get your token on http://nairaexchangerate.herokuapp.com/.
+The Naira Currency Exchange API does require API keys or authentication in order to access and interrogate its API, Register and get your token on http://nairaexchangerate.herokuapp.com/.
 
 **Basic usage:**<br />
 
@@ -56,7 +56,7 @@ Set The Exchange Rate Type You Want To Retrieve, we have the following types
 1. `cbn` Central Bank Of Nigeria Rate
 2. `bdc` Burueu The Change Rate
 3. `bank` Bank Rate
-4. `moneygram` Moneygram Rate
+4. `moneygram` MoneyGram Rate
 5. `westernunion` Western Union Rate
 
 
