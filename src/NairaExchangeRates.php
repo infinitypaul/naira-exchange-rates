@@ -55,6 +55,7 @@ class NairaExchangeRates
         'USD', 'GBP', 'EUR', 'JPY', 'XAF', 'CNY', 'QAR', 'ZAR', 'SEK',
     ];
 
+    // Supported Types
     private $_types = [
         'cbn', 'bdc', 'bank', 'moneygram', 'westernunion',
     ];
