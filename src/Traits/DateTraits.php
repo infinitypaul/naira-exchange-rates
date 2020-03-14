@@ -6,6 +6,15 @@ use Infinitypaul\NairaExchangeRates\Exceptions\Exceptions;
 
 trait DateTraits
 {
+    // Regular Expression for the date:
+    private $dateRegExp = '/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/';
+
+    // Date from which to request historic rates:
+    private $dateFrom;
+
+    // Date to which to request historic rates:
+    private $dateTo;
+
     // Get the "from" date:
     public function getDateFrom()
     {

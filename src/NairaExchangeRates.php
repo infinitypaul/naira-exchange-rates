@@ -29,8 +29,7 @@ class NairaExchangeRates
      */
     protected $response;
 
-    // The type (default is cbn):
-    private $type;
+
 
     /**
      * Instance of Guzzle Client.
@@ -38,30 +37,8 @@ class NairaExchangeRates
      */
     protected $client;
 
-    // The base currency (default is USD):
-    private $baseCurrency;
 
-    // Regular Expression for the currency:
-    private $currencyRegExp = '/^[A-Z]{3}$/';
 
-    // Date from which to request historic rates:
-    private $dateFrom;
-
-    // Date to which to request historic rates:
-    private $dateTo;
-
-    // Supported currencies:
-    private $_currencies = [
-        'USD', 'GBP', 'EUR', 'JPY', 'XAF', 'CNY', 'QAR', 'ZAR', 'SEK',
-    ];
-
-    // Supported Types
-    private $_types = [
-        'cbn', 'bdc', 'bank', 'moneygram', 'westernunion',
-    ];
-
-    // Regular Expression for the date:
-    private $dateRegExp = '/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/';
 
     public function __construct($accessToken = null)
     {
@@ -74,18 +51,22 @@ class NairaExchangeRates
 
     private function prepareRequest()
     {
-        $this->client = new Client(['base_uri' => self::baseURL, 'headers' => ['Authorization' => 'Bearer '.$this->accessToken]]);
+        $this->client = new Client(['base_uri' => self::baseURL, 'headers' => [
+            'Accept' => 'application/json',
+            'Authorization' => 'Bearer '.$this->accessToken
+        ]]);
     }
 
     public function getResponse()
     {
-        return json_decode($this->response->getBody());
+        $response  = new Response($this->response);
+        $json = $response->toJSON();
+        return json_decode( $json );
     }
 
     public function performGetRequest($relativeUrl, $params)
     {
         $this->response = $this->client->request('GET', $relativeUrl, $params);
-
         return $this->getResponse();
     }
 

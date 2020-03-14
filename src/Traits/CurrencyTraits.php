@@ -6,6 +6,18 @@ use Infinitypaul\NairaExchangeRates\Exceptions\Exceptions;
 
 trait CurrencyTraits
 {
+    // Supported currencies:
+    private $_currencies = [
+        'USD', 'GBP', 'EUR', 'JPY', 'XAF', 'CNY', 'QAR', 'ZAR', 'SEK',
+    ];
+
+    // The base currency (default is USD):
+    private $baseCurrency;
+
+    // Regular Expression for the currency:
+    private $currencyRegExp = '/^[A-Z]{3}$/';
+
+
     // Sanitize a currency code:
     private function sanitizeCurrencyCode(string $code)
     {

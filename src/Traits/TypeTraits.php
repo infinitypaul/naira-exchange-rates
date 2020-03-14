@@ -6,6 +6,14 @@ use Infinitypaul\NairaExchangeRates\Exceptions\Exceptions;
 
 trait TypeTraits
 {
+    // Supported Types
+    private $_types = [
+        'cbn', 'bdc', 'bank', 'moneygram', 'westernunion',
+    ];
+
+    // The type (default is cbn):
+    private $type;
+
     // Set the base type:
     public function setType(string $type)
     {
