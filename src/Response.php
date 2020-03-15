@@ -16,7 +16,7 @@ class Response
     private $statusCode;
     private $timestamp;
 
-    public function __construct(\GuzzleHttp\Psr7\Response $response = null)
+    public function __construct(\GuzzleHttp\Psr7\Response $response)
     {
         $this->response = $response;
         $this->headers = $response->getHeaders();

@@ -25,21 +25,21 @@ The Naira Currency Exchange API does require API keys or authentication in order
 Fetch the latest exchange rates 
 ``` php
 $naira = new NairaExchangeRates
-$rates  = $naira->->setType('cbn')->fetch();
+$rates  = $naira->setType('cbn')->fetch();
 ```
 
 **Historical Data:**<br />
 Get historical rates for any day since 1999:
 ``` php
 $naira = new NairaExchangeRates
-$rates  = $naira->->setType('cbn')->addDateFrom('2019-11-26')->fetch();
+$rates  = $naira->setType('cbn')->addDateFrom('2019-11-26')->fetch();
 ```
 
 **Fetch Specific Rate:**<br />
 If you do not want all current rates, it's possible to specify only the currencies you want
 ``` php
 $naira = new NairaExchangeRates
-$rates  = $naira->->setType('cbn')->setBaseCurrency('usd')->fetch();
+$rates  = $naira->setType('cbn')->setBaseCurrency('usd')->fetch();
 ```
 
 ### 4. API Reference:
