@@ -17,7 +17,6 @@ trait CurrencyTraits
     // Regular Expression for the currency:
     private $currencyRegExp = '/^[A-Z]{3}$/';
 
-
     // Sanitize a currency code:
     private function sanitizeCurrencyCode(string $code)
     {
