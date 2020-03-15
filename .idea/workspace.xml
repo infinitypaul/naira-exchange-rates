@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="906c12ae-d8be-4bcc-9ccf-06e46cb25ad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NairaExchangeRates.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/NairaExchangeRates.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/CurrencyTraits.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/CurrencyTraits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/DateTraits.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/DateTraits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/TypeTraits.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/TypeTraits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584179233194</updated>
       <workItem from="1584179234960" duration="7846000" />
-      <workItem from="1584197097569" duration="15384000" />
+      <workItem from="1584197097569" duration="15640000" />
     </task>
     <servers />
   </component>
