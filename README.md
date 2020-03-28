@@ -92,6 +92,7 @@ If you have spotted any bugs, or would like to request additional features from 
 ## Credits
 
 - [Paul Edward](https://github.com/infinitypaul)
+- [Olutoye Owojaye](https://github.com/teeto4517)
 - [All Contributors](../../contributors)
 
 ## How can I thank you?

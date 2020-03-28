@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="906c12ae-d8be-4bcc-9ccf-06e46cb25ad8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/naira-exchange-rates.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/naira-exchange-rates.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -57,6 +60,9 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
     </include_path>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1Z79OYwpaMA6DqAevqJWwyDZOff" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -67,6 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -92,6 +99,10 @@
       <updated>1584179233194</updated>
       <workItem from="1584179234960" duration="7846000" />
       <workItem from="1584197097569" duration="16596000" />
+      <workItem from="1584367174054" duration="1797000" />
+      <workItem from="1584522018478" duration="51000" />
+      <workItem from="1585272484342" duration="34000" />
+      <workItem from="1585272554508" duration="1477000" />
     </task>
     <servers />
   </component>
@@ -107,5 +118,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="338" y="255" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1584202222471" />
+    <state x="636" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1585272556518">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="636" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585272556518" />
   </component>
 </project>
